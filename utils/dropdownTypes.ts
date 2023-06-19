@@ -11,7 +11,10 @@ export type roomType =
   | "Bedroom"
   | "Bathroom"
   | "Office"
-  | "Gaming Room";
+  | "Gaming Room"
+  | "Kitchen"
+  | "Gym"
+  | "Restaurant";
 
 export const themes: themeType[] = [
   "Modern",
@@ -27,4 +30,8 @@ export const rooms: roomType[] = [
   "Bedroom",
   "Bathroom",
   "Gaming Room",
+    "Kitchen",
+  "Gym",
+  "Restaurant",
+
 ];
