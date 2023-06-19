@@ -55,6 +55,14 @@ export default function DreamPage() {
   const [theme, setTheme] = useState<themeType>("Modern");
   const [room, setRoom] = useState<roomType>("Living Room");
 
+  const MyInputField = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+
   const UploadDropZone = () => (
     <UploadDropzone
       uploader={uploader}
@@ -143,6 +151,12 @@ export default function DreamPage() {
                       themes={rooms}
                     />
                   </div>
+                  
+<div>
+      <input type="text" value={inputValue} onChange={handleChange} />
+      <p>Input Value: {inputValue}</p>
+    </div>
+                  
                   <div className="mt-4 w-full max-w-sm">
                     <div className="flex mt-6 w-96 items-center space-x-3">
                       <Image
