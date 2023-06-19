@@ -145,10 +145,7 @@ export default function DreamPage() {
                     />
                   </div>
                   
-<div>
-      <input type="text" value={inputValue} onChange={handleChange} />
-      <p>Input Value: {inputValue}</p>
-    </div>
+
                   
                   <div className="mt-4 w-full max-w-sm">
                     <div className="flex mt-6 w-96 items-center space-x-3">
