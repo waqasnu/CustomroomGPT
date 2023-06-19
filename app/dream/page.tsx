@@ -61,7 +61,7 @@ export default function DreamPage() {
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
-
+  };
 
   const UploadDropZone = () => (
     <UploadDropzone
