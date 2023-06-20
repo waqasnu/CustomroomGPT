@@ -16,6 +16,15 @@ export type roomType =
   | "Gym"
   | "Restaurant";
 
+export type wallType =
+  | "Red"
+  | "Blue"
+  | "Orange"
+  | "Yellow"
+  | "Green"
+  | "White"
+  | "Gray"
+
 export const themes: themeType[] = [
   "Modern",
   "Minimalist",
@@ -35,3 +44,14 @@ export const rooms: roomType[] = [
   "Restaurant",
 
 ];
+
+export const rooms: wallType[] = [
+  "Red",
+  "Blue",
+  "Orange",
+  "Yellow",
+  "Green",
+  "White",
+    "Gray",
+];
+
