@@ -37,7 +37,7 @@ export async function POST(request: Request) {
   const { imageUrl, theme, room, wall } = await request.json();
 
    //const wallcolor = "Red";
-   const aprompt = "best quality, extremely detailed, photo from Pinterest, interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning," + wall;
+   const aprompt = "best quality, extremely detailed, photo from Pinterest, interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning," + room;
 
   // POST request to Replicate to start the image restoration generation process
   let startResponse = await fetch("https://api.replicate.com/v1/predictions", {
