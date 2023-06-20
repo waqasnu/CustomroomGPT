@@ -36,6 +36,8 @@ export async function POST(request: Request) {
 
   const { imageUrl, theme, room, wall } = await request.json();
 
+  wall = wall.toLowerCase();
+
    //const wallcolor = "Red";
    const aprompt = "best quality, extremely detailed, photo from Pinterest, interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning," + wall;
 
