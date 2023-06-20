@@ -55,7 +55,7 @@ export async function POST(request: Request) {
             ? "a room for gaming with gaming computers, gaming consoles, and gaming chairs"
             : `a ${theme.toLowerCase()} ${room.toLowerCase()}`,
         a_prompt:
-          ${aprompt} ,
+          `${aprompt}` ,
         n_prompt:
           "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
       },
