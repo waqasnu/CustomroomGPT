@@ -45,7 +45,7 @@ export const rooms: roomType[] = [
 
 ];
 
-export const rooms: wallType[] = [
+export const walls: wallType[] = [
   "Red",
   "Blue",
   "Orange",
