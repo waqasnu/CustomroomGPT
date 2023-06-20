@@ -5,16 +5,16 @@ import {
   ChevronUpIcon,
 } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
-import { roomType, themeType } from "../utils/dropdownTypes";
+import { roomType, themeType, wallType } from "../utils/dropdownTypes";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 interface DropDownProps {
-  theme: themeType | roomType;
-  setTheme: (theme: themeType | roomType) => void;
-  themes: themeType[] | roomType[];
+  theme: themeType | roomType | wallType;
+  setTheme: (theme: themeType | roomType | wallType) => void;
+  themes: themeType[] | roomType[] | wallType[];
 }
 
 // TODO: Change names since this is a generic dropdown now
