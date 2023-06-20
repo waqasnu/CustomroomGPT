@@ -14,7 +14,7 @@ import Toggle from "../../components/Toggle";
 import appendNewToName from "../../utils/appendNewToName";
 import downloadPhoto from "../../utils/downloadPhoto";
 import DropDown from "../../components/DropDown";
-import { roomType, rooms, themeType, themes } from "../../utils/dropdownTypes";
+import { roomType, rooms, themeType, themes, wallType, walls } from "../../utils/dropdownTypes";
 
 // Configuration for the uploader
 const uploader = Uploader({
@@ -54,6 +54,7 @@ export default function DreamPage() {
   const [photoName, setPhotoName] = useState<string | null>(null);
   const [theme, setTheme] = useState<themeType>("Modern");
   const [room, setRoom] = useState<roomType>("Living Room");
+    const [wall, setWall] = useState<wallType>("Red");
 
  
   const UploadDropZone = () => (
@@ -146,6 +147,25 @@ export default function DreamPage() {
                   </div>
                   
 
+                    <div className="space-y-4 w-full max-w-sm">
+                    <div className="flex mt-10 items-center space-x-3">
+                      <Image
+                        src="/number-3-white.svg"
+                        width={30}
+                        height={30}
+                        alt="1 icon"
+                      />
+                      <p className="text-left font-medium">
+                        Choose your room color.
+                      </p>
+                    </div>
+                    <DropDown
+                      theme={wall}
+                      setTheme={(newWall) => setWall(newWall as typeof wall)}
+                      themes={walls}
+                    />
+                  </div>
+                
                   
                   <div className="mt-4 w-full max-w-sm">
                     <div className="flex mt-6 w-96 items-center space-x-3">
